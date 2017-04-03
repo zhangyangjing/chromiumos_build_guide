@@ -82,7 +82,7 @@ cros_workon info --board=${BOARD} --all | grep assets
 
 replace images in `chromiumos/src/platform/chromiumos-assets` by custom animation resources
 rebuild package & deploy to qemu instance
-````
+```
 cros_workon --board=${BOARD} start chromiumos-assets
 cros_workon_make --board=${BOARD} chromiumos-assets
 cros deploy ssh://root@127.0.0.1:9222 chromiumos-assets
@@ -90,6 +90,7 @@ cros deploy ssh://root@127.0.0.1:9222 chromiumos-assets
 
 
 **Links**
-http://dev.chromium.org/chromium-os/developer-guide
-https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/running-chromeos-image-under-virtual-machines
-https://www.chromium.org/chromium-os/build/cros-deploy
+
+* http://dev.chromium.org/chromium-os/developer-guide
+* https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/running-chromeos-image-under-virtual-machines
+* https://www.chromium.org/chromium-os/build/cros-deploy
